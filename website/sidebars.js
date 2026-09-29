@@ -15,6 +15,11 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: '实战案例',
+      items: ['cases/intro', 'cases/case-1-agent-ssrf', 'cases/case-2-middleware-policy', 'cases/case-3-domain-pattern'],
+    },
+    {
+      type: 'category',
       label: 'API 参考',
       items: ['api/types', 'api/manager', 'api/domain', 'api/ip', 'api/config'],
     },
