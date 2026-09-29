@@ -743,11 +743,11 @@ func (m *Manager) CheckIP(ip string) (types.Permission, error) {
 //	cidr, _ := manager.LookupIP("10.1.2.3") // 返回 "10.1.0.0/16"
 //	cidr, _ = manager.LookupIP("10.2.0.1")  // 返回 "10.0.0.0/8"
 func (m *Manager) LookupIP(ip string) (string, error) {
-	ipAcl := m.ipACL()
-	if ipAcl == nil {
+	ipACL := m.ipACL()
+	if ipACL == nil {
 		return "", types.ErrNoACL
 	}
-	return ipAcl.Lookup(ip)
+	return ipACL.Lookup(ip)
 }
 
 // GetIPRanges 获取当前IP访问控制列表中的所有IP范围
