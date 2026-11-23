@@ -11,6 +11,10 @@
   <b>Access Control Library for AI Agents — Block SSRF, Control Outbound Domains & IPs</b>
 </p>
 
+<p align="center">
+  <b>English</b> | <a href="README.zh-CN.md">简体中文</a>
+</p>
+
 ---
 
 AI agents make HTTP calls as part of their tool use. Without guardrails, they can be tricked into accessing internal services (SSRF), leaking data to unintended destinations, or hitting cloud metadata endpoints. **acl-skills** gives you a clean Go API to enforce domain and IP allow/deny lists before any outbound request leaves your agent.

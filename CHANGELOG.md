@@ -7,6 +7,9 @@
 
 ## [Unreleased]
 
+### Added
+- 新增简体中文 README（`README.zh-CN.md`），与英文 `README.md` 互链；默认展示仍为英文版本。
+
 ## [1.0.0] - 2026-07-17
 
 ### Added
